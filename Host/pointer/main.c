@@ -28,8 +28,19 @@ int main(void){
 
     printf("value of Address %p is %x\n" , pAddress, *pAddress);
 
+    short *pAddress0 = (short*) &a;
+    printf("value of Address %p is %x\n" , pAddress0, *pAddress0);
 
+    pAddress0 = pAddress0 + 1;
 
+    printf("value of Address %p is %x\n" , pAddress0, *pAddress0);
+
+    int *pAddress1 = (int*) &a;
+    printf("value of Address %p is %x\n" , pAddress1, *pAddress1);
+
+    pAddress1 = pAddress1 + 1;
+
+    printf("value of Address %p is %x\n" , pAddress1, *pAddress1);
 
 
     return 0;
